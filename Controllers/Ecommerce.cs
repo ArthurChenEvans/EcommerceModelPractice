@@ -18,7 +18,7 @@ public class Ecommerce : Controller
         }
         else
         {
-            return BadRequest();
+            return BadRequest(ModelState.Values);
         }
     }
 }   
